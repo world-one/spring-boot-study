@@ -1,6 +1,6 @@
-package com.havi.service;
+package com.example.study.demo.havi.service;
 
-import com.havi.domain.Book;
+import com.example.study.demo.havi.domain.Book;
 
 import java.util.List;
 

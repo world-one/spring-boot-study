@@ -1,8 +1,8 @@
-package com.havi;
+package com.example.study.demo.havi;
 
-import com.havi.controller.BookController;
-import com.havi.domain.Book;
-import com.havi.service.BookService;
+import com.example.study.demo.havi.controller.BookController;
+import com.example.study.demo.havi.domain.Book;
+import com.example.study.demo.havi.service.BookService;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;

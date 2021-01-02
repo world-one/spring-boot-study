@@ -6,7 +6,6 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 
 import java.util.List;
-import java.util.Map;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.core.Is.is;
@@ -20,9 +19,10 @@ public class PropertyTest {
 
     @Test
     public void test() {
-        List<Map> fruitData = fruitProperty.getList();
-
-        assertThat(fruitData.get(0).get("name"), is("banana"));
-        assertThat(fruitData.get(0).get("color"), is("yellow"));
+//        List<Map> fruitData = fruitProperty.getList();
+        List<Fruit> fruitData = fruitProperty.getList();
+        assertThat(fruitData.get(0).getName(), is("banana"));
+        assertThat(fruitData.get(0).getColor(), is("yellow"));
+        assertThat(fruitProperty.getColorName(), is("colorName"));
     }
 }
